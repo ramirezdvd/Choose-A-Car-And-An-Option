@@ -10,14 +10,12 @@ using System.Windows.Forms;
 
 namespace UIControlsAndMultiLine_DavidRamirez_II
     //Author: David Ramirez
-    // ID 266160
-    // 3/25/2017
     // Purpose of program is to add together the vehicle cost and the optinal features
     // To list the vehicle and options purchased
 {
     public partial class Form1 : Form
     {
-        // To display the constants
+        // To create the ammounts for the constants for the vehicle options
 
         const decimal MySunRoof = 1000;
         const decimal MyDVDPlayer = 500;
@@ -32,13 +30,14 @@ namespace UIControlsAndMultiLine_DavidRamirez_II
 
         private void ButtonCalculate_Click(object sender, EventArgs e)
         {
-            // To convert the text to a number
+            // To create the total ammount number
 
             decimal MyLblTotalCost = 0;
 
-            // To List the items purchased
+            // FinalOrder calculates based on which radio button is selected, || (if, or)
+            // calculates based on one or all checkboxes selected
 
-            string LblList = "";
+
             String FinalOrder = "";
             if (radioButtonChevVolt.Checked || radioButtonFordPinto.Checked)
             {
@@ -55,7 +54,6 @@ namespace UIControlsAndMultiLine_DavidRamirez_II
                     FinalOrder = FinalOrder + "Ford Pinto" + "\n";
                 }
 
-
                 if (checkBoxSunRf.Checked)
                 {
                     MyLblTotalCost += MySunRoof;
@@ -71,6 +69,7 @@ namespace UIControlsAndMultiLine_DavidRamirez_II
                 }
             }
             else
+            //to show error message if no choice is made
             { MessageBox.Show("Please Select A Vehicle"); }
             
             //To Show the numbers in the text field

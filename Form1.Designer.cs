@@ -176,7 +176,7 @@
             // 
             // LblTotalCost
             // 
-            this.LblTotalCost.BackColor = System.Drawing.Color.Transparent;
+            this.LblTotalCost.BackColor = System.Drawing.Color.Black;
             this.LblTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LblTotalCost.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTotalCost.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -198,7 +198,7 @@
             // 
             // LblFinalOrder
             // 
-            this.LblFinalOrder.BackColor = System.Drawing.Color.Transparent;
+            this.LblFinalOrder.BackColor = System.Drawing.Color.Black;
             this.LblFinalOrder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LblFinalOrder.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFinalOrder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
